@@ -2,6 +2,8 @@
 
 [![CI Python](https://github.com/xlmriosx/continuos-integration-enviroment/actions/workflows/build.yaml/badge.svg)](https://github.com/xlmriosx/continuos-integration-enviroment/actions/workflows/build.yaml)
 
+2nd release
+
 # Continuos Integration - Enviroment - Resume
 
 ![Image](assets/Entorno-de-Integracion-Continua-Lucas-M-Rios.png)
