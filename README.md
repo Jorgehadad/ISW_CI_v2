@@ -2,7 +2,7 @@
 
 [![CI Python](https://github.com/xlmriosx/continuos-integration-enviroment/actions/workflows/build.yaml/badge.svg)](https://github.com/xlmriosx/continuos-integration-enviroment/actions/workflows/build.yaml)
 
-2nd release
+2nd release 1.0.2
 
 # Continuos Integration - Enviroment - Resume
 
