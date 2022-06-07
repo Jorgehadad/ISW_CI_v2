@@ -1,0 +1,40 @@
+name: Continuos Integration of Python Code
+
+on: [push, pull_request]
+# branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # python-version: ["3.8", "3.9", "3.10"]
+        python-version: ["3.8"]
+    steps:
+    - uses: actions/checkout@v3
+    - run: git fetch --prune --unshallow
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Running syntax tests with pylint
+      run: |
+        pylint src/app.py
+        export PYTHONPATH=src
+        pylint tests/test.py
+    - name: Running unit tests with pytest
+      run: |
+        export PYTHONPATH=src
+        pytest tests/test.py
+    - name: Deploying app in Heroku
+      env:
+        HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }}
+        HEROKU_DOMAIN_APP: ${{ secrets.HEROKU_DOMAIN_APP }}
+      if: github.ref == 'refs/heads/main' && job.status == 'success'
+      run: |
+        git remote add heroku https://heroku:$HEROKU_TOKEN@git.heroku.com/$HEROKU_DOMAIN_APP.git      
+        git push heroku HEAD:main -f
