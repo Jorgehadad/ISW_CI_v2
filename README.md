@@ -4,6 +4,8 @@
 
 2nd release 1.0.2
 
+Testing Slack integration
+
 # Continuos Integration - Enviroment - Resume
 
 ![Image](assets/Entorno-de-Integracion-Continua-Lucas-M-Rios.png)
