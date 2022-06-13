@@ -1,6 +1,6 @@
 # Creating CI/CD Pipeline for Python Project using
 
-[![CI Python](https://github.com/xlmriosx/continuos-integration-enviroment/actions/workflows/build.yaml/badge.svg)](https://github.com/xlmriosx/continuos-integration-enviroment/actions/workflows/build.yaml)
+[![CI Python](https://github.com/Jorgehadad/ISW_CI_v2/actions/workflows/build.yaml/badge.svg)](https://github.com/Jorgehadad/ISW_CI_v2/actions/workflows/build.yaml)
 
 2nd release 1.0.2
 
@@ -8,7 +8,7 @@ Testing Slack integration
 
 # Continuos Integration - Enviroment - Resume
 
-![Image](assets/Entorno-de-Integracion-Continua-Lucas-M-Rios.png)
+![Image](assets/Entorno-de-Integracion-Continua.png)
 
 ## About Continuous Integration
 
