@@ -2,7 +2,7 @@
 
 from flask import Flask
 
-app = Flas(__name__)
+app = Flask(__name__)
 
 @app.route("/")
 def index():
@@ -13,3 +13,6 @@ def index():
 
 if __name__ == "__main__":
     app.run()
+    
+#crear una llamada a una funcion que no existe
+var = "hola"
