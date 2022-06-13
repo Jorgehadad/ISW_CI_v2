@@ -3,7 +3,8 @@
 [![CI Python](https://github.com/Jorgehadad/ISW_CI_v2/actions/workflows/build.yaml/badge.svg)](https://github.com/Jorgehadad/ISW_CI_v2/actions/workflows/build.yaml)
 
 2nd release 1.0.2
-3rd release 1.0.3 new
+3rd release 1.0.3 new new 4
+
 
 Testing Slack integration
 
